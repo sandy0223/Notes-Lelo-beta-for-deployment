@@ -1,6 +1,4 @@
 import React from 'react';
-import { saveAs } from 'file-saver';
-
 const UploadedFiles = ({ files }) => {
   const downloadFile = (file) => {
     saveAs(file, file.name);
