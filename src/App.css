@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.App {
+  text-align: start;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.file-upload p{
+  border:1px solid #f91574;
+ border-radius: 10px;
+}
+
+.file-upload {
+  height: 20vh;
+  border: 2px dashed rgb(18, 152, 18);
+  border-radius: 10px;
+  text-align: center;
+  font-family: cursive;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  text-align: center;
+  font-family: "kajiro";
+  letter-spacing: .1em;
+  font-size: 9vw;
+  font-weight: 300;
+}
+.uploaded-files {
+  margin-top: 20px;
+}
+button {
+  background-color: #61dafb;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-item {
+  display: flex;
+  flex-wrap: nowrap ;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #0ad5fd;
+  padding: 10px;
+  color: #fff;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  font-family: kanit,monospace;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #c4d259;
+  color: rgb(14, 2, 2);
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+nav {
+  background-color: #328DC4;
+  position:sticky;
+  top: 0;
+  padding: 1vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: cursive;
+}
+
+video{
+  width: 15vh;
+  height: 7vh;
+}
+.filters {
+  display: flex;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .file-item {
+    align-items: flex-start;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .filters {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
